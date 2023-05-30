@@ -2,7 +2,7 @@ import logo from "../assets/Laura-Bon-logo.svg";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 export default function Header() {
   return (
-    <nav className="p-1">
+    <nav className="py-1">
       <div className="text-white p-2 items-center justify-between space-x-3 flex w-full h-[75px]  bg-[rgb(7,47,84)]">
         <img
           className="w-20 h-12 bg-slate-50 ml-5 outline-none"
@@ -10,14 +10,14 @@ export default function Header() {
           alt="laurabon logo"
         />
         <div className="flex items-center gap-5">
-          <ul className="flex gap-5">
+          <ul className="flex gap-11">
             <li>HOME</li>
             <li>ABOUT US</li>
             <li>ARTICLE & VIDEOS</li>
             <li>CONTACT</li>
           </ul>
           <button
-            className="flex ml-11 bg-white p-1 rounded text-blue-800"
+            className="flex ml-[250px] bg-white p-1 rounded text-blue-800"
             type="submit"
           >
             DONATE
