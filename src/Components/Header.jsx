@@ -1,5 +1,6 @@
 import logo from "../assets/Laura-Bon-logo.svg";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import HeaderBottom from "./HeaderBottom";
 export default function Header() {
   return (
     <nav className="py-1">
@@ -17,14 +18,14 @@ export default function Header() {
             <li>CONTACT</li>
           </ul>
           <button
-            className="flex ml-[250px] bg-white p-1 rounded text-blue-800"
+            className="flex ml-[250px] mr-5 bg-white p-1 rounded text-blue-900"
             type="submit"
           >
             DONATE
           </button>
         </div>
       </div>
-      <div className="flex bg-white absolute  h-[75px] mx-auto top-[75px] items-center">
+      <div className="flex bg-white   h-[75px] mx-auto top-[75px] items-center">
         <div className="flex mx-auto w-screen justify-center p-[10px] gap-[10px] space-x-2 py-5 items-center">
           <p className="text-[20px] text-[rgb(3,41,61)]">WATCH + LISTEN</p>
           <div className="h-5 border-[rgba(3,41,61,1)] border-l-2 "></div>
@@ -38,7 +39,7 @@ export default function Header() {
           </p>
         </div>
       </div>
-      ;
+      <HeaderBottom className="" />
     </nav>
   );
 }
