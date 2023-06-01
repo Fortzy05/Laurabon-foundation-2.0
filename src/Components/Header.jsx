@@ -36,7 +36,7 @@ export default function Header() {
             </li>
             <div className="h-4 hidden md:inline-flex border-white border-l-2"></div>
             <li className="flex ml-2 items-center bg-gray-100 rounded-full p-2">
-              <MagnifyingGlassIcon className="h-6 text-gray-600" />
+              <MagnifyingGlassIcon className="h-4 text-gray-600" />
               <input
                 type="text"
                 placeholder="Search"
