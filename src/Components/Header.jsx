@@ -15,8 +15,8 @@ export default function Header() {
           alt="laurabon logo"
         />
         <div className="flex absolute lg:left-[600px] items-center">
-          <ul className="flex gap-7 space-x-2 items-center">
-            <li className="ml-[150px] py-4 px-3">
+          <ul className="flex gap-5 space-x-2 items-center">
+            <li className="ml-[100px] py-4 px-3">
               <a href="" className="text-xl">PRAYER</a>
             </li>
             <div className="h-4 border-white border-l-2 hidden"></div>
