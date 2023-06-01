@@ -14,29 +14,34 @@ export default function Header() {
           src={logo}
           alt="laurabon logo"
         />
-        <div className="flex absolute lg:left-[600px] items-center">
+        <div className="flex absolute left-[90px]  items-center">
           <ul className="flex gap-5 space-x-2 items-center">
             <li className="ml-[50px] py-4 px-3">
-              <a href="" className="text-sm font-medium">PRAYER</a>
-            </li>
-            <div className="h-4 border-white border-l-2 hidden"></div>
-            <li>
-              <a href="" className="text-sm font-medium">DONATE</a>
-            </li>
-            <div className="h-4 border-white border-l-2 hidden "></div>
-
-            <li className="flex gap-2 sm:hidden">
-              <a href="" className="items-center flex gap-2">
-                <ShoppingCartIcon className="h-6 flex" /> <span className="hidden md:inline-flex">View Cart</span>
+              <a href="" className="text-sm font-medium py-4 px-3">
+                PRAYER
               </a>
             </li>
-            <div className="h-4 border-white border-l-2 hidden "></div>
-            <li className="hidden md:inline-flex">
-              <a href="">Sign In</a>
+            <div className="h-4 md:inline-flex border-white border-l-2 hidden"></div>
+            <li>
+              <a href="" className="text-sm font-medium py-4 px-3">
+                DONATE
+              </a>
             </li>
-            <div className="h-4 hidden md:inline-flex border-white border-l-2"></div>
-            <li className="flex ml-2 items-center bg-gray-100 rounded-full p-2">
-              <MagnifyingGlassIcon className="h-4 text-gray-600" />
+            <div className="h-4 md:inline-flex border-white border-l-2 hidden "></div>
+
+            <li className="flex gap-2">
+              <a href="" className="items-center flex gap-2">
+                <ShoppingCartIcon className="h-6 flex" />
+                <span className="hidden md:flex py-4 px-3 text-sm font-medium uppercase">View Cart</span>
+              </a>
+            </li>
+            <div className="h-4 md:inline-flex border-white border-l-2 hidden "></div>
+            <li className="hidden md:inline-flex">
+              <a href="" className="py-4 px-3 text-sm font-medium uppercase">Sign In</a>
+            </li>
+
+            <li className="md:flex hidden ml-2 items-center bg-gray-200 rounded-full p-1">
+              <MagnifyingGlassIcon className="h-4 text-gray-600 ml-2" />
               <input
                 type="text"
                 placeholder="Search"
@@ -46,8 +51,17 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      <div className="flex shadow-md bg-white h-[50px] mx-auto top-[75px] items-center">
-        <div className="flex mx-auto w-screen justify-center p-[10px] space-x-4 py-5 items-center">
+      <div className="flex shadow-md bg-white h-[50px] ml-1 top-[75px] items-center">
+        <div className="flex md:hidden ml-2 items-center bg-gray-100 rounded-full p-2 px-12">
+          <MagnifyingGlassIcon className="h-5 text-gray-600" />
+          <input
+            type="text"
+            placeholder="Search"
+            className="md:hidden ml-3 flex-shrink items-center bg-transparent outline-none placeholder-gray-500"
+          />
+        </div>
+        <p className="flex md:hidden"><a href="">Sign In</a></p>
+        <div className="md:flex hidden mx-auto w-screen justify-center p-[10px] space-x-4 py-5 items-center">
           <p className="text-[20px] font-medium text-[rgb(3,41,61)]">
             WATCH + LISTEN
           </p>
