@@ -8,7 +8,7 @@ import HeaderBottom from "./HeaderBottom";
 export default function Header() {
   return (
     <nav className=" overflow-hidden">
-      <div className="flex text-white relative items-center justify-between space-x-3 w-full h-[60px]  bg-[rgb(7,47,84)]">
+      <div className="flex text-white relative items-center justify-between space-x-3 w-full h-[42px]  bg-[rgb(7,47,84)]">
         <img
           className="mt-3 h-0 absolute top-0 lg:left-[50px]"
           src={logo}
@@ -16,7 +16,7 @@ export default function Header() {
         />
         <div className="flex absolute lg:left-[600px] items-center">
           <ul className="flex gap-5 space-x-2 items-center">
-            <li className="ml-[100px] py-4 px-3">
+            <li className="ml-[50px] py-4 px-3">
               <a href="" className="text-xl">PRAYER</a>
             </li>
             <div className="h-4 border-white border-l-2 hidden"></div>
