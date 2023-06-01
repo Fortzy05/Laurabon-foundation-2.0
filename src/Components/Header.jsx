@@ -17,17 +17,17 @@ export default function Header() {
         <div className="flex absolute lg:left-[600px] items-center">
           <ul className="flex gap-5 space-x-2 items-center">
             <li className="ml-[50px] py-4 px-3">
-              <a href="" className="text-xl">PRAYER</a>
+              <a href="" className="text-sm font-medium">PRAYER</a>
             </li>
             <div className="h-4 border-white border-l-2 hidden"></div>
             <li>
-              <a href="" className="text-xl">DONATE</a>
+              <a href="" className="text-sm font-medium">DONATE</a>
             </li>
             <div className="h-4 border-white border-l-2 hidden "></div>
 
             <li className="flex gap-2 sm:hidden">
               <a href="" className="items-center flex gap-2">
-                <ShoppingCartIcon className="h-9 flex" /> <span className="hidden md:inline-flex">View Cart</span>
+                <ShoppingCartIcon className="h-6 flex" /> <span className="hidden md:inline-flex">View Cart</span>
               </a>
             </li>
             <div className="h-4 border-white border-l-2 hidden "></div>
