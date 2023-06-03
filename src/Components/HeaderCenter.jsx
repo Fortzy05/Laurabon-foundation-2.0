@@ -4,7 +4,7 @@ function HeaderCenter() {
   return (
     <div className="flex shadow-md h-[50px] items-center">
       <div>
-        <button className="flex ml-3 md:hidden focus:outline-none">
+        <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
             class="fill-current h-7 w-7"
             viewBox="0 0 20 20"
@@ -25,17 +25,17 @@ function HeaderCenter() {
         </div>
       </div>
 
-      <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[5px] flex-grow">
+      <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[6px] flex-grow">
         <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
         <input
           type="text"
           placeholder="Search"
-          className="md:hidden bg-gray-100 flex-1 px-4 rounded-full focus:outline-none"
+          className="md:hidden bg-gray-100 flex-1 px-2 rounded-full focus:outline-none"
         />
       </form>
 
       <p className="flex md:hidden font-bold text-[#072f54]">
-        <a href="" className="px-2 flex-shrink-0">
+        <a href="" className="px-2 flex-shrink-0 mr-7">
           Sign In
         </a>
       </p>
