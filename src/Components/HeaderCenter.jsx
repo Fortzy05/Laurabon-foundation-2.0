@@ -4,12 +4,11 @@ function HeaderCenter() {
   return (
     <div className="flex shadow-md bg-white h-[40px] mt-4 top-[90px] items-center">
         <button
-        id="menu-btn"
         className="flex hamburger md:hidden focus:outline-none"
       >
-        <span className="hamburger-top"></span>
-        <span className="hamburger-middle"></span>
-        <span className="hamburger-bottom"></span>
+        <span className="hamburger-top">-</span>
+        <span className="hamburger-middle">-</span>
+        <span className="hamburger-bottom">-</span>
       </button>
       <div className="md:hidden">
         <div
