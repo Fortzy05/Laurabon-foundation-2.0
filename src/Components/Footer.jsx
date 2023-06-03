@@ -36,16 +36,16 @@ function Footer() {
         <div className="flex justify-around space-x-32">
           <div className="flex flex-col space-y-3 text-white">
             <a href="#" className="hover:text-brightRed">
-              Home
+              Prayer
             </a>
             <a href="#" className="hover:text-brightRed">
-              Pricing
+              Donate
             </a>
             <a href="#" className="hover:text-brightRed">
-              Product
+              View Cart
             </a>
             <a href="#" className="hover:text-brightRed">
-              About
+              About Us
             </a>
           </div>
           <div className="flex flex-col space-y-3 text-white">
