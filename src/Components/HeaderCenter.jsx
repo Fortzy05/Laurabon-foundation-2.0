@@ -4,10 +4,15 @@ function HeaderCenter() {
   return (
     <div className="flex shadow-md h-[50px] items-center">
       <div>
-        <button className="flex hamburger md:hidden focus:outline-none bg-red-800">
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
+        <button className="flex ml-3 md:hidden focus:outline-none">
+          <svg
+            class="fill-current h-7 w-7"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
+          </svg>
         </button>
         <div className="md:hidden">
           <div className="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
@@ -30,7 +35,7 @@ function HeaderCenter() {
       </form>
 
       <p className="flex md:hidden font-bold text-[#072f54]">
-        <a href="" className="px-4">
+        <a href="" className="px-4 flex-shrink-0">
           Sign In
         </a>
       </p>
