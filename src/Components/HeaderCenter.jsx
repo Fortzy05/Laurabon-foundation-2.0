@@ -25,7 +25,7 @@ function HeaderCenter() {
         </div>
       </div>
 
-      <form className="flex md:hidden ml-5 items-center bg-gray-100 rounded-full p-[5px] flex-grow">
+      <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[5px] flex-grow">
         <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
         <input
           type="text"
@@ -35,11 +35,11 @@ function HeaderCenter() {
       </form>
 
       <p className="flex md:hidden font-bold text-[#072f54]">
-        <a href="" className="px-4 flex-shrink-0">
+        <a href="" className="px-2 flex-shrink-0">
           Sign In
         </a>
       </p>
-      <div className="md:flex hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center">
+      <div className="md:flex hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
         <p className="text-[20px] p-4 ">WATCH + LISTEN</p>
         <div className="h-5 border-[rgba(3,41,61,1)] border-l-2 "></div>
         <p className="text-[20px] p-4">LAURABON FOUNDATION</p>
