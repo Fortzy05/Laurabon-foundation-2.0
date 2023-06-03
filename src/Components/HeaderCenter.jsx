@@ -35,7 +35,7 @@ function HeaderCenter() {
       </form>
 
       <p className="flex md:hidden font-bold text-[#072f54]">
-        <a href="" className="px-2 flex-shrink-0 mr-7">
+        <a href="" className="px-2 flex-shrink-0 mr-[70px]">
           Sign In
         </a>
       </p>
