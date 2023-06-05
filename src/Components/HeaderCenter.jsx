@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 function HeaderCenter() {
   return (
-    <div className="flex shadow-md h-[42px] items-center">
+    <div className="flex drop-shadow-md h-[42px] items-center">
       <div>
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
@@ -43,19 +43,27 @@ function HeaderCenter() {
           </a>
         </p>
       </div>
-      <div className="group md:flex cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
-        <p className="text-md p-4 hover:text-blue-600">
+      <div className=" md:flex group hover:text-blue-300 cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
+        <a href="" className="text-md p-4 group-hover:text-gray-400 ease-in-out">
           WATCH + LISTEN
-        </p>
-        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-md p-4">LAURABON FOUNDATION</p>
-        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-md p-4 ">STUDY</p>
-        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-md font-medium flex gap-2 items-center">
-          <ShoppingCartIcon className="h-6 w-6 text-gray-700" />
+        </a>
+        <div className="h-4 border-gray-400 border-l-[1px] "></div>
+        <a href="" className="text-md p-4 group-hover:text-gray-400 ease-in-out">
+          LAURABON FOUNDATION
+        </a>
+        <div className="h-4 border-gray-400 border-l-[1px] "></div>
+        <a href="" className="group-hover:text-gray-400 text-md p-4 ease-in-out hover:text-blue-900">
+          STUDY
+        </a>
+
+        <div className="h-4 border-gray-400 border-l-[1px] "></div>
+        <a
+          href=""
+          className="text-md group-hover:text-gray-400 font-medium flex gap-2 items-center ease-in-out"
+        >
+          <ShoppingCartIcon className="h-6 w-6 text-gray-700 group-hover:text-gray-400 ease-in-out" />
           SHOP
-        </p>
+        </a>
       </div>
     </div>
   );
