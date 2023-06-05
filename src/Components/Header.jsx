@@ -14,17 +14,17 @@ export default function Header() {
         <div className="md:flex space-x-6 uppercase text-white font-medium md:space-x-11 flex-shrink-0">
           <ul className="flex gap-5 text-white items-center space-x-3 ">
             <li>
-              <a href="" className="text-sm  py-4 px-3">
+              <a href="" className="text-sm py-4 px-3">
                 PRAYER
               </a>
             </li>
-            <div className="h-4 md:inline-flex border-white border-l-2 hidden"></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden"></div>
             <li>
               <a href="" className="text-sm  py-4 px-3">
                 DONATE
               </a>
             </li>
-            <div className="h-4 md:inline-flex border-white border-l-2 hidden "></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden "></div>
 
             <li className="flex gap-2">
               <a href="" className="items-center flex gap-2">
@@ -34,7 +34,7 @@ export default function Header() {
                 </span>
               </a>
             </li>
-            <div className="h-4 md:inline-flex border-white border-l-2 hidden "></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden "></div>
             <li className="hidden md:inline-flex">
               <a href="" className="py-4 px-3 text-sm">
                 Sign In
@@ -43,7 +43,7 @@ export default function Header() {
           </ul>
         </div>
         <form>
-          <div className="md:flex hidden ml-2 items-center bg-gray-200 rounded-full p-1">
+          <div className="md:flex hidden ml-2 items-center bg-white rounded-full p-1">
             <MagnifyingGlassIcon className="h-4 text-gray-600 ml-2" />
             <input
               type="text"

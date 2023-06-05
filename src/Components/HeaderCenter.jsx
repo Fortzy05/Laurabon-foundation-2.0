@@ -1,8 +1,11 @@
-import React from 'react'
-import { ShoppingCartIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import React from "react";
+import {
+  ShoppingCartIcon,
+  MagnifyingGlassIcon,
+} from "@heroicons/react/24/solid";
 function HeaderCenter() {
   return (
-    <div className="flex shadow-md h-[50px] items-center">
+    <div className="flex shadow-md h-[42px] items-center">
       <div>
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
@@ -24,31 +27,33 @@ function HeaderCenter() {
           </div>
         </div>
       </div>
-<div className='flex items-center mx-auto'>
-      <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[6px] flex-grow">
-        <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
-        <input
-          type="text"
-          placeholder="Search"
-          className="md:hidden bg-gray-100 flex-1 px-2 rounded-full focus:outline-none"
-        />
-      </form>
+      <div className="flex items-center mx-auto">
+        <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[6px] flex-grow">
+          <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
+          <input
+            type="text"
+            placeholder="Search"
+            className="md:hidden bg-gray-100 flex-1 px-2 rounded-full focus:outline-none"
+          />
+        </form>
 
-      <p className="flex md:hidden font-bold text-[#072f54]">
-        <a href="" className="px-2 flex-shrink-0 mr-[100px]">
-          Sign In
-        </a>
-      </p>
+        <p className="flex md:hidden font-bold text-[#072f54]">
+          <a href="" className="px-2 flex-shrink-0 mr-[100px]">
+            Sign In
+          </a>
+        </p>
       </div>
-      <div className="md:flex hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
-        <p className="text-[20px] p-4 ">WATCH + LISTEN</p>
-        <div className="h-5 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-[20px] p-4">LAURABON FOUNDATION</p>
-        <div className="h-5 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-[20px] p-4 ">STUDY</p>
-        <div className="h-5 border-[rgba(3,41,61,1)] border-l-2 "></div>
-        <p className="text-[20px] font-medium flex gap-2 items-center">
-          <ShoppingCartIcon className="h-8 w-8 text-gray-500" />
+      <div className="group md:flex cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
+        <p className="text-md p-4 hover:text-blue-600">
+          WATCH + LISTEN
+        </p>
+        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
+        <p className="text-md p-4">LAURABON FOUNDATION</p>
+        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
+        <p className="text-md p-4 ">STUDY</p>
+        <div className="h-4 border-[rgba(3,41,61,1)] border-l-2 "></div>
+        <p className="text-md font-medium flex gap-2 items-center">
+          <ShoppingCartIcon className="h-6 w-6 text-gray-700" />
           SHOP
         </p>
       </div>
@@ -56,4 +61,4 @@ function HeaderCenter() {
   );
 }
 
-export default HeaderCenter
+export default HeaderCenter;
