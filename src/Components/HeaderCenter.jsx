@@ -5,8 +5,8 @@ import {
 } from "@heroicons/react/24/solid";
 function HeaderCenter() {
   return (
-    <div className="flex drop-shadow-md h-[42px] items-center">
-      <div>
+    <div className="flex shadow-md h-[42px] items-center">
+      <div className="pt-2">
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
             class="fill-current h-7 w-7"
@@ -18,7 +18,7 @@ function HeaderCenter() {
           </svg>
         </button>
         <div className="md:hidden">
-          <div className="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
             <a href="#">Prayer</a>
             <a href="#">Donate</a>
             <a href="#">Shop</a>
@@ -27,32 +27,39 @@ function HeaderCenter() {
           </div>
         </div>
       </div>
-      <div className="flex items-center mx-auto">
-        <form className="flex md:hidden ml-3 items-center bg-gray-100 rounded-full p-[6px] flex-grow">
+      <div className="flex md:hidden items-center flex-grow pt-2">
+        <form className="flex ml-3 items-center text-[#574e54] bg-[#e8e8ea] text-base h-8 w-full mx-auto  rounded-full flex-shrink">
           <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
           <input
             type="text"
             placeholder="Search"
-            className="md:hidden bg-gray-100 flex-1 px-2 rounded-full focus:outline-none"
+            className="md:hidden bg-[#e8e8ea] flex-1 px-2 rounded-full focus:outline-none"
           />
         </form>
 
-        <p className="flex md:hidden font-bold text-[#072f54]">
-          <a href="" className="px-2 flex-shrink-0 mr-[100px]">
-            Sign In
-          </a>
-        </p>
+        <button className="font-semibold text-[#627986] bg-transparent flex-shrink-0 text-base p-[5px]">
+          Sign In
+        </button>
       </div>
       <div className=" md:flex group hover:text-blue-300 cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
-        <a href="" className="text-md p-4 group-hover:text-gray-400 ease-in-out">
+        <a
+          href=""
+          className="text-md p-4 group-hover:text-gray-400 ease-in-out"
+        >
           WATCH + LISTEN
         </a>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <a href="" className="text-md p-4 group-hover:text-gray-400 ease-in-out">
+        <a
+          href=""
+          className="text-md p-4 group-hover:text-gray-400 ease-in-out"
+        >
           LAURABON FOUNDATION
         </a>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <a href="" className="group-hover:text-gray-400 text-md p-4 ease-in-out hover:text-blue-900">
+        <a
+          href=""
+          className="group-hover:text-gray-400 text-md p-4 ease-in-out hover:text-blue-900"
+        >
           STUDY
         </a>
 

@@ -4,7 +4,6 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
 
-import HeaderBottom from "./HeaderBottom";
 import HeaderCenter from "./HeaderCenter";
 export default function Header() {
   return (
