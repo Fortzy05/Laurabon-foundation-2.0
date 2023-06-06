@@ -6,7 +6,7 @@ import {
 function HeaderCenter() {
   return (
     <div className="flex shadow-md h-[42px] items-center">
-      <div className="pt-2">
+      <div className="">
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
             class="fill-current h-7 w-7"
@@ -27,9 +27,9 @@ function HeaderCenter() {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden items-center flex-grow pt-2">
+      <div className="flex md:hidden items-center flex-grow">
         <form className="flex ml-3 items-center text-[#574e54] bg-[#e8e8ea] text-base h-8 w-full mx-auto  rounded-full flex-shrink">
-          <MagnifyingGlassIcon className="ml-2 h-6 text-gray-600" />
+          <MagnifyingGlassIcon className="ml-2 h-4 text-gray-600 flex-shrink-0" />
           <input
             type="text"
             placeholder="Search"
