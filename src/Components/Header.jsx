@@ -17,13 +17,13 @@ export default function Header() {
                 PRAYER
               </a>
             </li>
-            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden"></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-[1px] hidden"></div>
             <li>
               <a href="" className="text-sm  py-4 px-3">
                 DONATE
               </a>
             </li>
-            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden "></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-[1px] hidden "></div>
 
             <li className="flex gap-2">
               <a href="" className="items-center flex gap-2">
@@ -33,7 +33,7 @@ export default function Header() {
                 </span>
               </a>
             </li>
-            <div className="h-3 md:inline-flex border-gray-300 border-l-2 hidden "></div>
+            <div className="h-3 md:inline-flex border-gray-300 border-l-[1px] hidden "></div>
             <li className="hidden md:inline-flex">
               <a href="" className="py-4 px-3 text-sm">
                 Sign In
