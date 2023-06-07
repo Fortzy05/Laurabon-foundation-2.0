@@ -37,7 +37,7 @@ function HeaderCenter() {
           />
         </form>
 
-        <button className="font-semibold text-[#627986] bg-transparent flex-shrink-0 text-base p-[5px]">
+        <button className="font-semibold text-[#627986] bg-transparent flex-shrink-0 text-base p-[5px] mr-16">
           Sign In
         </button>
       </div>
