@@ -27,13 +27,13 @@ function HeaderCenter() {
           </div>
         </div>
       </div>
-      <div className="flex md:hidden items-center flex-grow">
-        <form className="flex p-[2px] ml-3 items-center text-[#574e54] bg-[#e8e8ea] text-base max-w-sm w-full rounded-full md:max-w-md">
-          <MagnifyingGlassIcon className="ml-2 h-4 text-gray-600 flex-shrink-0" />
+      <div className="flex md:hidden items-center flex-grow flex-shrink">
+        <form className="flex p-[2px] ml-2 items-center text-[#574e54] bg-[#e8e8ea] text-base  w-full rounded-full md:max-w-md">
+          <MagnifyingGlassIcon className="ml-1 h-4 text-gray-600" />
           <input
             type="text"
             placeholder="Search"
-            className="md:hidden bg-[#e8e8ea] px-4 py-[2px] rounded-full focus:outline-none flex-grow"
+            className="md:hidden bg-[#e8e8ea] px-2 py-[2px] rounded-full focus:outline-none flex-grow flex-shrink"
           />
         </form>
 
