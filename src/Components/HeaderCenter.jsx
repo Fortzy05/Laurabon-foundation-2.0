@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 function HeaderCenter() {
   return (
-    <div className="flex shadow-md h-[42px] items-center">
+    <div className="flex shadow-md h-[42px] mx-auto items-center bg-white">
       <div className="">
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
@@ -28,12 +28,12 @@ function HeaderCenter() {
         </div>
       </div>
       <div className="flex md:hidden items-center flex-grow">
-        <form className="flex p-[2px] ml-3 items-center text-[#574e54] bg-[#e8e8ea] text-base h-8 w-full m-0 rounded-full flex-shrink">
+        <form className="flex p-[2px] ml-3 items-center text-[#574e54] bg-[#e8e8ea] text-base max-w-sm w-full rounded-full md:max-w-md">
           <MagnifyingGlassIcon className="ml-2 h-4 text-gray-600 flex-shrink-0" />
           <input
             type="text"
             placeholder="Search"
-            className="md:hidden bg-[#e8e8ea] flex-1 px-2 rounded-full focus:outline-none sm:max-w-[60%]"
+            className="md:hidden bg-[#e8e8ea] px-4 py-[2px] rounded-full focus:outline-none flex-grow"
           />
         </form>
 
@@ -44,7 +44,7 @@ function HeaderCenter() {
       <div className=" md:flex group hover:text-blue-300 cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
         <a
           href=""
-          className="text-md p-4 group-hover:text-gray-400 ease-in-out"
+          className="text-md p-2 group-hover:text-gray-400 ease-in-out"
         >
           WATCH + LISTEN
         </a>
@@ -68,7 +68,6 @@ function HeaderCenter() {
           href=""
           className="text-md group-hover:text-gray-400 font-medium flex gap-2 items-center ease-in-out"
         >
-          <ShoppingCartIcon className="h-6 w-6 text-gray-700 group-hover:text-gray-400 ease-in-out" />
           SHOP
         </a>
       </div>

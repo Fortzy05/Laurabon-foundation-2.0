@@ -1,4 +1,4 @@
-import logo from "../assets/main-logo.svg";
+import logo from "../assets/dapper1.svg";
 import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
@@ -7,11 +7,11 @@ import {
 import HeaderCenter from "./HeaderCenter";
 export default function Header() {
   return (
-    <nav className="relative mx-auto overflow-hidden">
-      <div className="flex p-2 text-white items-center justify-between space-x-3 w-full h-[42px]  bg-[#072f54]">
-        <img className="mt-3 h-7 " src={logo} alt="laurabon logo" />
-        <div className="md:flex space-x-6 uppercase text-white font-medium md:space-x-11 flex-shrink-0">
-          <ul className="flex gap-5 text-white items-center space-x-3 ">
+    <nav className="fixed top-0 right-0 left-0 z-10 mx-auto overflow-hidden">
+      <div className="flex p-2 text-white items-center justify-between space-x-2 w-full h-[42px]  bg-[#072f54]">
+        <img className="md:pl-[100px]  h-7 " src={logo} alt="laurabon logo" />
+        <div className="md:flex space-x-7 uppercase text-white font-medium md:space-x-11 flex-shrink-0">
+          <ul className="flex gap-1 text-white items-center space-x-2 ">
             <li>
               <a href="" className="text-sm py-4 px-3">
                 PRAYER
@@ -41,7 +41,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <form>
+        <form className="md:pr-[100px]">
           <div className="md:flex hidden ml-2 items-center bg-white rounded-full p-1">
             <MagnifyingGlassIcon className="h-4 text-gray-600 ml-2" />
             <input
