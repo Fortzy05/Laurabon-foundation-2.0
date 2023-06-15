@@ -5,8 +5,8 @@ import BodyText from "./BodyText";
 function Body() {
   return (
     <section className="">
-      <div className="relative px-2">
-        <img className="w-full h-full" src={bodyImage} alt="" />
+      <div className="relative md:px-2">
+        <img className="w-full min-h-max h-full" src={bodyImage} alt="" />
         <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-4 p-6 md:space-x-12">
           <button
             href="#"
