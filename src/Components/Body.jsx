@@ -1,10 +1,11 @@
 import React from "react";
 import bodyImage from "../assets/andra-fuller-wkgv7i2vtzm-unsplash-1.svg";
+import BodyText from "./BodyText";
 
 function Body() {
   return (
     <section className="">
-      <div className="relative">
+      <div className="relative px-2">
         <img className="w-full h-auto" src={bodyImage} alt="" />
         <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-4 p-6 md:space-x-12">
           <button
@@ -18,6 +19,7 @@ function Body() {
           </button>
         </div>
       </div>
+      <BodyText />
     </section>
   );
 }
