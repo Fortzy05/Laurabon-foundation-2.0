@@ -16,11 +16,11 @@ export default function BodyText() {
           </span>
           <span className="text-center">we are here to pray with you!</span>
         </p>
-        <div className="flex gap-5 space-x-3 justify-center p-2 py-9">
-          <button className="rounded text-white hover:bg-blue-300 bg-blue-500 text-sm px-4 py-2 md:text-base md:uppercase md:px-8 md:py-3">
+        <div className="flex md:flex-row flex-col gap-5 space-x-3 justify-center p-2 py-9">
+          <button className="rounded text-white hover:bg-blue-300 bg-[#7CA4BF] font-serif text-base uppercase px-[30px] py-[13px] min-w-[300px] m-3">
             send your request
           </button>
-          <button className="rounded text-white hover:bg-blue-300 bg-blue-500 text-sm px-8 py-2 md:text-base md:uppercase md:px-16 md:py-3">
+          <button className="rounded text-white hover:bg-blue-300 bg-[#7CA4BF] font-serif uppercase text-base  px-[30px] py-[13px] min-w-[300px] m-3">
             know Jesus
           </button>
         </div>
