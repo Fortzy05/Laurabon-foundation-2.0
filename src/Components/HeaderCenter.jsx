@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 function HeaderCenter() {
   return (
-    <div className="flex shadow-md h-[42px] mx-auto items-center bg-white">
+    <div className="flex shadow-md h-[50px] mx-auto items-center bg-white">
       <div className="">
         <button className="flex ml-2 md:hidden focus:outline-none">
           <svg
@@ -18,7 +18,7 @@ function HeaderCenter() {
           </svg>
         </button>
         <div className="md:hidden">
-          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto left-6 right-6 drop-shadow-md">
             <a href="#">Prayer</a>
             <a href="#">Donate</a>
             <a href="#">Shop</a>
