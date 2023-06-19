@@ -13,23 +13,23 @@ function Footer() {
           </div>
           <div className="flex justify-center space-x-4">
             <a href="#">
-              <img src="images/icons8-facebook.svg" className="h-8" alt="" />
+              <img src="/src/assets/icons8-twitter.svg" className="h-8" alt="" />
             </a>
             <a href="#">
               <img
-                src="images/icons8-youtube-logo.svg"
-                className="h-8"
+                src="/src/assets/icons8-youtube-logo.svg"
+                className="h-8 bg-white rounded-full"
                 alt=""
               />
             </a>
             <a href="#">
-              <img src="images/icons8-twitter.svg" className="h-8" alt="" />
+              <img src="/src/assets/icons8-facebook.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icons8-pinterest.svg" className="h-8" alt="" />
+              <img src="/src/assets/icons8-pinterest.svg" className="h-8" alt="" />
             </a>
             <a href="#">
-              <img src="images/icons8-instagram.svg" className="h-8" alt="" />
+              <img src="/src/assets/icons8-instagram.svg" className="h-8" alt="" />
             </a>
           </div>
         </div>

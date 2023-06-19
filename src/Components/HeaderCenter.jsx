@@ -1,32 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import {
-  ShoppingCartIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
+import Hamburger from "./hamburger";
+
 function HeaderCenter() {
+  const [hamburgerOpen , setHamburgerOpen] = useState(false);
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);}
   return (
     <div className="flex shadow-md h-[50px] mx-auto items-center bg-white">
-      <div className="">
-        <button className="flex ml-2 md:hidden focus:outline-none">
-          <svg
-            class="fill-current h-7 w-7"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
-          </svg>
-        </button>
-        <div className="md:hidden">
-          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto left-6 right-6 drop-shadow-md">
-            <a href="#">Prayer</a>
-            <a href="#">Donate</a>
-            <a href="#">Shop</a>
-            <a href="#">View Cart</a>
-            <a href="#">Community</a>
-          </div>
-        </div>
-      </div>
+      <div className="" onClick={toggleHamburger}><Hamburger isOpen={hamburgerOpen} /></div>
+      
       <div className="flex md:hidden items-center flex-grow flex-shrink">
         <form className="flex p-[2px] ml-2 items-center text-[#574e54] bg-[#e8e8ea] text-base  w-full rounded-full md:max-w-md">
           <MagnifyingGlassIcon className="ml-1 h-4 text-gray-600" />
