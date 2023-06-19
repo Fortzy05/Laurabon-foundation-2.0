@@ -1,18 +1,40 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
-import Hamburger from "./hamburger";
+
 
 function HeaderCenter() {
-  const [hamburgerOpen , setHamburgerOpen] = useState(false);
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen);}
+  const btnRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    btnRef.current.classList.toggle("open");
+  };
+
   return (
     <div className="flex shadow-md h-[50px] mx-auto items-center bg-white">
-      <div className="" onClick={toggleHamburger}><Hamburger isOpen={hamburgerOpen} /></div>
-      
-      <div className="flex md:hidden items-center flex-grow flex-shrink">
+      <div className="">
+        <button
+          id="menu-btn" ref={btnRef} onClick={toggleMenu}
+          className="block hamburger md:hidden focus:outline-none"
+        >
+          <div className="hamburger-top"></div>
+          <div className="hamburger-middle"></div>
+          <div className="hamburger-bottom"></div>
+        </button>
+        <div id="menu" className={isOpen ? 'open' : ''}>
+          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto left-6 right-6 drop-shadow-md">
+            <a href="#">Prayer</a>
+            <a href="#">Donate</a>
+            <a href="#">Shop</a>
+            <a href="#">View Cart</a>
+            <a href="#">Community</a>
+          </div>
+        </div>
+      </div>
+      <div className="flex md:hidden items-center flex-grow flex-shrink ml-3">
         <form className="flex p-[2px] ml-2 items-center text-[#574e54] bg-[#e8e8ea] text-base  w-full rounded-full md:max-w-md">
           <MagnifyingGlassIcon className="ml-1 h-4 text-gray-600" />
           <input

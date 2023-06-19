@@ -16,15 +16,13 @@
 .hamburger-bottom {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
     width: 24px;
     height: 2px;
     background: rgb(34, 33, 33);
     transform: rotate(0px);
     transition: all 0.5s;
-    padding: 1px;
-    margin-left: 5px;
-
+    
 }
 
 .hamburger-middle {
