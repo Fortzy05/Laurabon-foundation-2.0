@@ -5,13 +5,16 @@ import {
 
 
 function HeaderCenter() {
-  const btnRef = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
+   const btnRef = useRef(null);
+   const navRef = useRef(null);
+   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    btnRef.current.classList.toggle("open");
-  };
+   const toggleMenu = () => {
+     setIsOpen(!isOpen);
+     btnRef.current.classList.toggle("open");
+     navRef.current.classList.toggle("flex");
+     navRef.current.classList.toggle("hidden");
+   };
 
   return (
     <div className="flex shadow-md h-[50px] mx-auto items-center bg-white">
@@ -24,8 +27,8 @@ function HeaderCenter() {
           <div className="hamburger-middle"></div>
           <div className="hamburger-bottom"></div>
         </button>
-        <div id="menu" className={isOpen ? 'open' : ''}>
-          <div className="absolute flex-col items-center self-end hidden  py-8 mt-10 space-y-6 font-bold bg-gray-900 sm:w-auto left-6 right-6 drop-shadow-md">
+        <div id="menu" className="md:hidden">
+          <div className={ `{isOpen ? 'open' : ''} ref={navRef} absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-gray-900 w-auto left-6 right-6 drop-shadow-md`}>
             <a href="#">Prayer</a>
             <a href="#">Donate</a>
             <a href="#">Shop</a>
