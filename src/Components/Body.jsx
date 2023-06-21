@@ -1,6 +1,7 @@
 import React from "react";
 import bodyImage from "../assets/andra-fuller-wkgv7i2vtzm-unsplash-1.svg";
 import BodyText from "./BodyText";
+import BodySection from "./BodySection";
 
 function Body() {
   return (
@@ -20,6 +21,7 @@ function Body() {
         </div>
       </div>
       <BodyText />
+      <BodySection />
     </section>
   );
 }

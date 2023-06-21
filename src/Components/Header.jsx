@@ -1,4 +1,4 @@
-import logo from "../assets/dapper1.svg";
+import logo from "../assets/logo11.png";
 import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
