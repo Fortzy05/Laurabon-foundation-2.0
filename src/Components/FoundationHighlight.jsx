@@ -5,7 +5,7 @@ import Prayer from "../assets/Join a prayer group.png";
 export default function FoundationHighlight() {
   return (
     <section>
-      <div className="container mx-auto mt-2 mb-2 px-1">
+      <div className="container p-2">
         <div className="flex flex-col gap-2 md:flex-row">
           <a href="" className="md:w-full">
             <img
@@ -16,10 +16,10 @@ export default function FoundationHighlight() {
           </a>
           <div className="md:w-1/2 flex flex-col gap-2">
             <a href="" className="flex-grow">
-              <img className="w- h-full" src={Study} alt="" />
+              <img className="w-full h-full" src={Study} alt="" />
             </a>
             <a href="" className="flex-grow">
-              <img className="" src={Prayer} alt="" />
+              <img className="h-full w-full" src={Prayer} alt="" />
             </a>
           </div>
         </div>

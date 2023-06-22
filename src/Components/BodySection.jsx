@@ -5,7 +5,7 @@ function BodySection() {
     <section className="">
       <div className="relative bg-[#072f54] h-[400px]">
         <div className="absolute border-l-0 h-72 w-64 top-[60px] md:right-[200px] right-16 border-white border-2 border-solid">
-          <div className="relative">
+          <div className="relative mx-auto">
             <p className="absolute top-5 text-white font-extrabold text-4xl">
               Be Inspired! Get Motivation From Our Books
             </p>

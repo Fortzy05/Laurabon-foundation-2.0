@@ -7,8 +7,8 @@ import {
 import HeaderCenter from "./HeaderCenter";
 export default function Header() {
   return (
-    <nav className="sticky top-0 z-50 mx-auto overflow-hidden">
-      <div className="flex p-2 text-white items-center justify-between space-x-2 w-full h-[42px]  bg-[#072f54]">
+    <nav className="sticky top-0 z-50 shadow-lg overflow-hidden">
+      <div className="flex p-2 text-white items-center justify-between space-x-2 w-full h-[42px]  bg-[#072f54] mx-auto">
         <img className="md:pl-[100px]  h-7 " src={logo} alt="laurabon logo" />
         <div className="md:flex space-x-7 uppercase text-white font-medium md:space-x-11 flex-shrink-0">
           <ul className="flex gap-1 text-white items-center space-x-2 ">

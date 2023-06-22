@@ -7,7 +7,7 @@ export default function BodyText() {
         <h1 className="text-center text-gray-600 text-2xl pb-4 font-serif">
           How can we pray for you?
         </h1>
-        <p className="flex flex-col text-center text-gray-600 text-lg font-serif">
+        <p className="flex flex-col text-center text-gray-600 md:text-lg text-base font-serif">
           "In the midst of all that's unfolding in the world,
           <span>
             we understand that your mind may be filled with countless thoughts
