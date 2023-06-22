@@ -7,12 +7,20 @@ export default function BodyText() {
         <h1 className="text-center text-gray-600 text-2xl pb-4 font-serif">
           How can we pray for you?
         </h1>
-        <p className="flex flex-col text-center text-gray-600 text-base font-serif">
-          with everything happening in the world right now, we know you have a
-          lot on your mind.
+        <p className="flex flex-col text-center text-gray-600 text-lg font-serif">
+          "In the midst of all that's unfolding in the world,
+          <span>
+            we understand that your mind may be filled with countless thoughts
+            and concerns.
+          </span>
+          But let us remind you that amidst it all, God is ever-present and
+          ready to embrace you.
           <span className="text-center">
-            Remember, God is always here for you! And whatever you are concerned
-            about or need
+            No matter what burdens or worries you carry, we stand by your side,
+            offering prayers and support.
+          </span>
+          <span>
+            Together, we can navigate through any challenge that comes our way."
           </span>
           <span className="text-center">we are here to pray with you!</span>
         </p>

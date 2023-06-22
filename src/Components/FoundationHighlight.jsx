@@ -1,6 +1,7 @@
 import React from "react";
 import lauraFoundation from "../assets/foundation2.png";
 import Study from "../assets/study plan.png";
+import Prayer from "../assets/Join a prayer group.png";
 export default function FoundationHighlight() {
   return (
     <section>
@@ -14,11 +15,11 @@ export default function FoundationHighlight() {
             />
           </a>
           <div className="md:w-1/2 flex flex-col gap-2">
-            <a className="flex-grow">
+            <a href="" className="flex-grow">
               <img className="w- h-full" src={Study} alt="" />
             </a>
-            <a className="flex-grow">
-              <img className="w- h-full" src={Study} alt="" />
+            <a href="" className="flex-grow">
+              <img className="" src={Prayer} alt="" />
             </a>
           </div>
         </div>
