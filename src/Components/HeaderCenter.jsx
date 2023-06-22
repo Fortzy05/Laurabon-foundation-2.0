@@ -14,7 +14,7 @@ function HeaderCenter() {
   };
 
   return (
-    <div className="flex p-2 items-center bg-white relative">
+    <div className="flex p-2 md:h-[42px] items-center bg-white relative">
       
         <button
           id="menu-btn"
