@@ -2,11 +2,12 @@ import React from "react";
 import bodyImage from "../assets/andra-fuller-wkgv7i2vtzm-unsplash-1.svg";
 import BodyText from "./BodyText";
 import BodySection from "./BodySection";
+import FoundationHighlight from "./FoundationHighlight";
 
 function Body() {
   return (
     <section className="">
-      <div className="relative md:px-2">
+      <div className="relative md:p-1">
         <img className="w-full h-full" src={bodyImage} alt="" />
         <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-4 p-6 md:space-x-12">
           <button
@@ -22,6 +23,7 @@ function Body() {
       </div>
       <BodyText />
       <BodySection />
+      <FoundationHighlight />
     </section>
   );
 }
