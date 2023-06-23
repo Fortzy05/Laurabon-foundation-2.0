@@ -6,37 +6,28 @@ import {
 } from "@heroicons/react/24/solid";
 export default function HeaderTop() {
   return (
-    <div className="flex text-white items-center justify-between space-x-2 w-full p-2 bg-[#072f54] md:h-[42px]">
-      <img className="md:pl-[100px] h-7" src={logo} alt="laurabon logo" />
-      <div className="md:flex space-x-7 uppercase text-white font-medium md:space-x-11 flex-shrink-0">
-        <ul className="flex gap-1 text-white items-center space-x-2">
-          <li>
-            <a href="/" className="text-sm py-4 px-2">
-              PRAYER
-            </a>
-          </li>
-          <li>
-            <a href="/" className="text-sm py-4 px-2">
-              DONATE
-            </a>
-          </li>
-          <li className="flex gap-2">
-            <a href="/" className="items-center flex gap-2">
-              <ShoppingCartIcon className="h-6" />
-              <span className="hidden md:flex py-4 px-3 text-sm">
-                View Cart
-              </span>
-            </a>
-          </li>
-          <li className="hidden md:inline-flex">
-            <a href="/" className="py-4 px-3 text-sm">
-              Sign In
-            </a>
-          </li>
-        </ul>
+    <div className="flex text-white items-center justify-between container bg-[#072f54] md:h-[42px] mx-auto">
+      <img className="md:mx-auto px-2 h-7" src={logo} alt="laurabon logo" />
+      <div className="uppercase flex text-white md:flex md:space-x-11 space-x-4 font-medium">
+        <a href="/" className="text-sm py-4 px-2">
+          PRAYER
+        </a>
+
+        <a href="/" className="text-sm py-4 px-2">
+          DONATE
+        </a>
+
+        <a href="/" className="flex items-center space-x-2">
+          <ShoppingCartIcon className="h-6" />
+          <span className="hidden md:flex text-sm">View Cart</span>
+        </a>
+
+        <a href="/" className="py-4 px-3 text-sm hidden md:inline-flex">
+          Sign In
+        </a>
       </div>
-      <form className="md:pr-[100px]">
-        <div className="md:flex hidden ml-2 items-center bg-white rounded-full p-1">
+      <form className="md:mx-auto">
+        <div className="md:flex hidden items-center bg-white rounded-full p-1">
           <MagnifyingGlassIcon className="h-4 text-gray-600 ml-2" />
           <input
             type="text"
