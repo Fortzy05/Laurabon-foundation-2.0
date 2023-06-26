@@ -1,30 +1,33 @@
 import React from "react";
 import logo from "../assets/laurabon logo.png";
+import Link from "react-router-dom"
 import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
 export default function HeaderTop() {
   return (
-    <div className="flex text-white items-center justify-between container bg-[#072f54] md:h-[42px] mx-auto">
-      <img className="md:mx-auto px-2 h-7" src={logo} alt="laurabon logo" />
+    <div className="flex text-white items-center justify-between bg-[#072f54] md:h-[42px] mx-auto">
+      <Link to="/">
+        <img className="md:mx-auto px-2 h-7" src={logo} alt="laurabon logo" />
+      </Link>
       <div className="uppercase flex text-white md:flex md:space-x-11 space-x-4 font-medium">
-        <a href="/" className="text-sm py-4 px-2">
+        <Link to="/" className="text-sm py-4 px-2">
           PRAYER
-        </a>
+        </Link>
 
-        <a href="/" className="text-sm py-4 px-2">
+        <Link to="/" className="text-sm py-4 px-2">
           DONATE
-        </a>
+        </Link>
 
-        <a href="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <ShoppingCartIcon className="h-6" />
           <span className="hidden md:flex text-sm">View Cart</span>
-        </a>
+        </Link>
 
-        <a href="/" className="py-4 px-3 text-sm hidden md:inline-flex">
+        <Link to="/" className="py-4 px-3 text-sm hidden md:inline-flex">
           Sign In
-        </a>
+        </Link>
       </div>
       <form className="md:mx-auto">
         <div className="md:flex hidden items-center bg-white rounded-full p-1">

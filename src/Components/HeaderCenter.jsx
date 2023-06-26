@@ -15,35 +15,35 @@ function HeaderCenter() {
   };
 
   return (
-    <div className="flex p-2 md:h-[42px] items-center bg-white relative">
-      <button
-        id="menu-btn"
-        ref={btnRef}
-        onClick={toggleMenu}
-        className="block hamburger md:hidden focus:outline-none ml-1"
-      >
-        <div className="hamburger-top"></div>
-        <div className="hamburger-middle"></div>
-        <div className="hamburger-bottom"></div>
-      </button>
-      <HeaderCenterMenu />
+    <div className="relative">
+      <div className="flex p-2 md:h-[42px] items-center bg-white relative">
+        <button
+          id="menu-btn"
+          ref={btnRef}
+          onClick={toggleMenu}
+          className="block hamburger md:hidden focus:outline-none ml-1"
+        >
+          <div className="hamburger-top"></div>
+          <div className="hamburger-middle"></div>
+          <div className="hamburger-bottom"></div>
+        </button>
+        <HeaderCenterMenu />
+      </div>
       <div
         id="menu"
         className={`${
           isOpen ? "open" : "hidden"
-        } absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}
+        }  absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
         ref={navRef}
       >
-        <div className="">
-          <a href="#">Prayer</a>
-          <a href="#">Donate</a>
-          <a href="#">Shop</a>
-          <a href="#">View Cart</a>
-          <a href="#">Community</a>
+        <div>
+          <Navlink to="#">Prayer</Navlink>
+          <Navlink to="#">Donate</Navlink>
+          <Navlink to="#">Shop</Navlink>
+          <Navlink to="#">View Cart</Navlink>
+          <Navlink to="#">Community</Navlink>
         </div>
       </div>
-
-      
     </div>
   );
 }

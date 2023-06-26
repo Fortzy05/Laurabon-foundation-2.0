@@ -1,5 +1,6 @@
 import React from 'react'
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import Link from "react-router-dom"
 
 export default function HeaderCenterMenu() {
   return (
@@ -14,27 +15,27 @@ export default function HeaderCenterMenu() {
           />
         </form>
 
-        <button className="text-base flex-shrink-0 p-[5px] text-[#627986] ml-3 font-semibold">
+        <button className="text-base flex-shrink-0 p-[5px] text-[#627986] mx-3 font-semibold">
           Sign In
         </button>
       </div>
       <div className=" md:flex group cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
-        <a href="#" className="text-md p-2 ease-in-out">
+        <Link to="#" className="text-md p-2 ease-in-out">
           WATCH + LISTEN
-        </a>
+        </Link>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <a href="#" className="text-md p-4 ease-in-out">
+        <Link to="#" className="text-md p-4 ease-in-out">
           LAURABON FOUNDATION
-        </a>
+        </Link>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <a href="#" className="text-md p-4 ease-in-out">
+        <Link to="#" className="text-md p-4 ease-in-out">
           STUDY
-        </a>
+        </Link>
 
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <a href="#" className="text-md p-4 ease-in-out">
+        <Link to="#" className="text-md p-4 ease-in-out">
           SHOP
-        </a>
+        </Link>
       </div>
     </>
   );

@@ -1,15 +1,19 @@
 import Header from "./Components/Header";
 import "./App.css";
 import Footer from "./Components/Footer";
-import Body from "./Components/Body";
-import BodySection from "./Components/BodySection";
+import Home from "./Components/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <main className="">
         <Header />
-        <Body />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          {/* <Route path="CreateAccount" element={<CreateAccount />}></Route> */}
+        </Routes>
+
         <Footer />
       </main>
     </>

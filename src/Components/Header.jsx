@@ -3,7 +3,7 @@ import HeaderTop from "./HeaderTop";
 
 export default function Header() {
   return (
-    <nav className="sticky top-0 z-50 shadow-lg overflow-hidden sm:w-screen container mx-auto">
+    <nav className="sticky top-0 z-10 shadow-lg overflow-hidden mx-auto">
       <HeaderTop />
       <HeaderCenter />
     </nav>
