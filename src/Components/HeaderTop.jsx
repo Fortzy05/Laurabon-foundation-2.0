@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/laurabon logo.png";
-import Link from "react-router-dom"
+import {Link} from "react-router-dom"
 import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
@@ -8,7 +8,7 @@ import {
 export default function HeaderTop() {
   return (
     <div className="flex text-white items-center justify-between bg-[#072f54] md:h-[42px] mx-auto">
-      <Link to="/">
+      <Link className="md:mx-auto" to="/">
         <img className="md:mx-auto px-2 h-7" src={logo} alt="laurabon logo" />
       </Link>
       <div className="uppercase flex text-white md:flex md:space-x-11 space-x-4 font-medium">

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import HeaderCenterMenu from "./HeaderCenterMenu";
+import { Link } from "react-router-dom";
 
 function HeaderCenter() {
   const btnRef = useRef(null);
@@ -37,11 +38,11 @@ function HeaderCenter() {
         ref={navRef}
       >
         <div>
-          <Navlink to="#">Prayer</Navlink>
-          <Navlink to="#">Donate</Navlink>
-          <Navlink to="#">Shop</Navlink>
-          <Navlink to="#">View Cart</Navlink>
-          <Navlink to="#">Community</Navlink>
+          <Link to="#">Prayer</Link>
+          <Link to="#">Donate</Link>
+          <Link to="#">Shop</Link>
+          <Link to="#">View Cart</Link>
+          <Link to="#">Community</Link>
         </div>
       </div>
     </div>

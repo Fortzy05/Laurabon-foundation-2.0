@@ -1,6 +1,6 @@
 import React from 'react'
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
-import Link from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 export default function HeaderCenterMenu() {
   return (
@@ -24,7 +24,7 @@ export default function HeaderCenterMenu() {
           WATCH + LISTEN
         </Link>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
-        <Link to="#" className="text-md p-4 ease-in-out">
+        <Link to="Foundation" className="text-md p-4 ease-in-out">
           LAURABON FOUNDATION
         </Link>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
