@@ -5,7 +5,7 @@ export default function Foundation() {
   return (
     <section>
       <div className="flex justify-center">
-        <div className="py-5 px-2 md:px-52 flex-col text-center text-gray-600 md:text-2xl text-base font-serif">
+        <div className="py-5 px-4 md:px-52 flex-col text-center text-gray-600 md:text-2xl text-base font-serif">
           <span>
             "One of the greatest gifts we have as humans is the ability to love
             and care for one another. As compassionate beings, we have a
