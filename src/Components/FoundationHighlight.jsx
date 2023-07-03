@@ -8,7 +8,7 @@ export default function FoundationHighlight() {
     <section>
       <div className="container p-2">
         <div className="flex flex-col gap-2 md:flex-row">
-          <Link to="#" className="md:w-full">
+          <Link to="/Foundation" className="md:w-full">
             <img
               className="w-full h-auto"
               src={lauraFoundation}
