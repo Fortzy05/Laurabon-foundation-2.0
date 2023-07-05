@@ -15,7 +15,7 @@ export default function HeaderCenterMenu() {
           />
         </form>
 
-        <button className="text-base flex-shrink-0 p-[5px] text-[#627986] mx-6">
+        <button className="text-base flex-shrink-0  text-[#627986] mx-4">
           Sign In
         </button>
       </div>
