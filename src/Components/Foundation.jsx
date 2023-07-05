@@ -1,11 +1,15 @@
 import React from "react";
 import FoundationDataDisplay from "./FoundationDataDisplay";
+import logo from "../assets/laurabon logo.png"
 
 export default function Foundation() {
   return (
     <section>
+      <div className="bg-[#072F54]">
+        <img src={logo} className="h-18 py-4 mx-auto" />
+      </div>
       <div className="flex justify-center">
-        <div className="py-5 px-4 md:px-52 flex-col text-center text-gray-600 md:text-2xl text-base font-serif">
+        <div className="py-5 px-4 md:px-52 flex-col text-center text-gray-600 md:text-xl text-xl font-serif">
           <span>
             "One of the greatest gifts we have as humans is the ability to love
             and care for one another. As compassionate beings, we have a

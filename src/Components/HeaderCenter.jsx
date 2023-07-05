@@ -34,7 +34,7 @@ function HeaderCenter() {
         id="menu"
         className={`${
           isOpen ? "flex" : "hidden"
-        }  fixed flex-col items-center uppercase text-blue-900  py-8 mt-5 space-y-3 font-bold bg-gray-100 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
+        }  fixed top-18 flex-col items-center uppercase text-[#072F54]  py-8 mt-5 space-y-4 font-normal bg-slate-50 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
         ref={navRef}
       >
         <Link to="#">Prayer</Link>
