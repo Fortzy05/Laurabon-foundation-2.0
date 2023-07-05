@@ -8,6 +8,7 @@ export default function Foundation() {
       <div className="bg-[#072F54]">
         <img src={logo} className="h-18 py-4 mx-auto" />
       </div>
+
       <div className="flex justify-center">
         <div className="py-5 px-4 md:px-52 flex-col text-center text-gray-600 md:text-xl text-xl font-serif">
           <span>
@@ -23,6 +24,14 @@ export default function Foundation() {
             faith.
           </p>
         </div>
+      </div>
+      <div className="p-6 ">
+        <iframe
+          className="mx-auto"
+          width="500"
+          height="350"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        ></iframe>
       </div>
       <FoundationDataDisplay />
     </section>

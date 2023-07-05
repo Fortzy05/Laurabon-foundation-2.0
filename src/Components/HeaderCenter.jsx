@@ -31,19 +31,25 @@ function HeaderCenter() {
         <HeaderCenterMenu />
       </div>
       <div
-        id="menu"
-        className={`${
-          isOpen ? "flex" : "hidden"
-        }  fixed top-18 flex-col items-center uppercase text-[#072F54]  py-8 mt-5 space-y-4 font-normal bg-slate-50 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
-        ref={navRef}
+        className={`fixed top-25 left-0 w-full h-1/2 flex-col transition-all duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
-        <Link to="#">Prayer</Link>
-
-        <Link to="/">Watch + Listen</Link>
-        <Link to="Foundation">Laura Bon Foundation</Link>
-        <Link to="#">Donate</Link>
-        <Link to="#">Shop</Link>
-        <Link to="#">View Cart</Link>
+        <div className="absolute flex  flex-col px-5 uppercase text-[#072F54] py-8 mt-3 space-y-4 font-normal bg-slate-50 sm:w-auto sm:self-center right-12 left-6 drop-shadow-md">
+          <Link to="#">Prayer</Link>
+          
+          <Link to="/">Watch + Listen</Link>
+          <Link to="Foundation">Laura Bon Foundation</Link>
+          <Link to="#">Donate</Link>
+          <Link to="#">Shop</Link>
+          <Link to="#">View Cart</Link>
+        </div>
+        <div
+          className={`top-0 left-0 w-full h-screen bg-black bg-opacity-50 z-10 ${
+            isOpen ? "flex" : "hidden"
+          }`}
+          onClick={toggleMenu}
+        ></div>
       </div>
     </div>
   );
