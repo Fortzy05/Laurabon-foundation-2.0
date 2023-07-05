@@ -4,7 +4,7 @@ import logo from "../assets/laurabon logo.png"
 
 export default function Foundation() {
   return (
-    <section>
+    <section className=" overflow-hidden">
       <div className="bg-[#072F54]">
         <img src={logo} className="h-18 py-4 mx-auto" />
       </div>
