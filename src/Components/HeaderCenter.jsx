@@ -35,7 +35,7 @@ function HeaderCenter() {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="absolute flex  flex-col px-5 uppercase text-[#072F54] py-8 mt-3 space-y-4 font-normal bg-slate-50 sm:w-auto sm:self-center right-12 left-6 drop-shadow-md">
+        <div className="absolute flex  flex-col px-5 uppercase text-[#072F54] py-8 mt-3 space-y-4 font-normal bg-slate-50 sm:w-auto sm:self-center right-6 left-6 drop-shadow-md">
           <Link to="#">Prayer</Link>
           
           <Link to="/">Watch + Listen</Link>
