@@ -33,17 +33,17 @@ function HeaderCenter() {
       <div
         id="menu"
         className={`${
-          isOpen ? "open" : "hidden"
-        }  absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
+          isOpen ? "flex" : "hidden"
+        }  fixed flex-col items-center uppercase text-blue-900  py-8 mt-5 space-y-3 font-bold bg-gray-100 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md z-10`}
         ref={navRef}
       >
-        <div>
-          <Link to="#">Prayer</Link>
-          <Link to="#">Donate</Link>
-          <Link to="#">Shop</Link>
-          <Link to="#">View Cart</Link>
-          <Link to="#">Community</Link>
-        </div>
+        <Link to="#">Prayer</Link>
+
+        <Link to="/">Watch + Listen</Link>
+        <Link to="Foundation">Laura Bon Foundation</Link>
+        <Link to="#">Donate</Link>
+        <Link to="#">Shop</Link>
+        <Link to="#">View Cart</Link>
       </div>
     </div>
   );
