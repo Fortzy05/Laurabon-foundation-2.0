@@ -1,5 +1,5 @@
 import React from "react";
-import bodyImage from "../assets/andra-fuller-wkgv7i2vtzm-unsplash-1.svg";
+import bodyImage from "../assets/home logo.png";
 import BodyText from "./BodyText";
 import BodySection from "./BodySection";
 import FoundationHighlight from "./FoundationHighlight";
