@@ -12,7 +12,7 @@ export default function HeaderTop() {
         <img className="md:mx-auto px-2 h-7" src={logo} alt="laurabon logo" />
       </Link>
       <div className="uppercase flex text-white md:flex md:space-x-11 space-x-4 font-medium">
-        <Link to="/" className="text-sm py-4 px-2">
+        <Link to="prayer" className="text-sm py-4 px-2">
           PRAYER
         </Link>
 

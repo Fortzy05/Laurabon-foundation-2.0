@@ -19,7 +19,7 @@ export default function HeaderCenterMenu() {
           Sign In
         </button>
       </div>
-      <div className=" md:flex group cursor-pointer hidden mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
+      <div className=" md:flex group cursor-pointer hidden uppercase  mx-auto text-[#03293d] w-screen justify-center p-[10px] space-x-4 items-center flex-shrink-0">
         <Link to="#" className="text-md p-2 ease-in-out">
           WATCH + LISTEN
         </Link>
@@ -31,7 +31,14 @@ export default function HeaderCenterMenu() {
         <Link to="#" className="text-md p-4 ease-in-out">
           STUDY
         </Link>
-
+        <div className="h-4 border-gray-400 border-l-[1px] "></div>
+        <Link to="Foundation" className="text-md p-4 ease-in-out">
+          Article
+        </Link>
+        <div className="h-4 border-gray-400 border-l-[1px] "></div>
+        <Link to="Foundation" className="text-md p-4 ease-in-out">
+          Art
+        </Link>
         <div className="h-4 border-gray-400 border-l-[1px] "></div>
         <Link to="#" className="text-md p-4 ease-in-out">
           SHOP

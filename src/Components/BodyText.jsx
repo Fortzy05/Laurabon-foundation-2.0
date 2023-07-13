@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function BodyText() {
   return (
     <article className="p-4">
@@ -25,9 +25,13 @@ export default function BodyText() {
           <span className="text-center">we are here to pray with you!</span>
         </p>
         <div className="flex md:flex-row flex-col gap-5 space-x-3 justify-center py-6">
-          <button className="rounded text-white hover:bg-blue-300 bg-[#7CA4BF] font-serif text-base uppercase px-[30px] py-[13px] min-w-[300px] m-3">
-            send your request
-          </button>
+          <Link
+            className="rounded text-white text-center hover:bg-blue-300 bg-[#7CA4BF] font-serif text-base uppercase px-[30px] py-[13px] min-w-[300px] m-3"
+            to="prayer"
+          >
+            <button className="uppercase">send your request</button>
+          </Link>
+
           <button className="rounded text-white hover:bg-blue-300 bg-[#7CA4BF] font-serif uppercase text-base  px-[30px] py-[13px] min-w-[300px] m-3">
             know Jesus
           </button>

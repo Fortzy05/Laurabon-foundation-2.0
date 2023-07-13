@@ -3,6 +3,7 @@ import bodyImage from "../assets/home logo.png";
 import BodyText from "./BodyText";
 import BodySection from "./BodySection";
 import FoundationHighlight from "./FoundationHighlight";
+import VideoSectionHome from "./VideoSectionHome";
 
 function Body() {
   return (
@@ -24,6 +25,7 @@ function Body() {
       <BodyText />
       <BodySection />
       <FoundationHighlight />
+      <VideoSectionHome />
     </section>
   );
 }

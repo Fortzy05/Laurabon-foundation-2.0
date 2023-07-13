@@ -26,12 +26,7 @@ export default function Foundation() {
         </div>
       </div>
       <div className="py-6">
-        <iframe
-          className="mx-auto"
-          width="500"
-          height="350"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-        ></iframe>
+       <video src=""></video>
       </div>
       <FoundationDataDisplay />
     </section>
